@@ -7,8 +7,8 @@ import Login from '@/components/screens/Login.vue'
 import Balance from '@/components/screens/Balance.vue'
 import GrandLivre from '@/components/screens/GrandLivre.vue'
 import GrandLivreCompte from '@/components/screens/GrandLivreCompte.vue'
-import Import from '@/components/screens/Import.vue'
 import ChiffreAffaires from '@/components/screens/ChiffreAffaires.vue'
+import VraiImport from '@/components/screens/VraiImport.vue'
 const routes = [
   { path: '/', component: ListeProduits },
   {path:'/panier',component:Panier},
@@ -17,7 +17,7 @@ const routes = [
   {path: '/balance', component: Balance},
   {path: '/grandLivre', component: GrandLivreCompte},
   { path: '/grandLivre/:accountId', component: GrandLivre },
-  {path: '/import', component: Import },
+  {path: '/import', component: VraiImport },
   {path: '/chiffreAffaires', component: ChiffreAffaires}
   
 
