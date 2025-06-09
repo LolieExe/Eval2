@@ -15,3 +15,24 @@ C_ElementValue
 -GL_JournalGeneratorLine
 Fact_Acct
 -tsisy
+
+
+DELETING THE DATABASE
+-mpihana ny serveur
+-dropdb -U postgres idempiere
+-createdb  --template=template0 -E UNICODE -O adempiere -U adempiere idempiere
+-jar xvf idempiere/org.adempiere.server-feature/data/seed/Adempiere_pg.jar
+-psql -d idempiere -U adempiere -f Adempiere_pg.dmp
+-open git bash
+-cd idempiere
+-bash RUN_SyncDBDev.sh 
+
+
+CHANGING THE VALUE OF TOKEN DURATION
+-System configurator => REST_TOKEN_EXPIRE_IN_MINUTES(Name), Configured value(1051200)
+-System configurator => REST_REFRESH_TOKEN_EXPIRE_IN_MINUTES(Name),Configured value(1051200)
+
+
+
+
+
