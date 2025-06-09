@@ -1,0 +1,17 @@
+GL_Category
+C_DocType
+C_AllocationLine
+C_Order
+C_OrderLine
+
+GL_Journal
+-tsisy
+GL_JournalLine
+-tsisy
+C_ElementValue
+-C_BP_EmployeeAct
+-GL_Distribution
+-GL_JournalGenerator
+-GL_JournalGeneratorLine
+Fact_Acct
+-tsisy
